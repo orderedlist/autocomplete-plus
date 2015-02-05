@@ -144,3 +144,6 @@ module.exports =
   consumeProvider: (provider) ->
     return unless provider?.provider?
     return @getAutocompleteManager().providerManager.registerProvider(provider.provider)
+
+  consumeSnippets: (snippets) ->
+    @getAutocompleteManager().snippets = snippets
